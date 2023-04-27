@@ -1,7 +1,7 @@
 {
   "name": "bootcamp-landing-page",
   "version": "1.0.0",
-  "description": "Fake web development bootcamp landing page built with HTML, CSS, JS.",
+  "description": "",
   "main": "script.js",
   "scripts": {
     "dev": "vite",
