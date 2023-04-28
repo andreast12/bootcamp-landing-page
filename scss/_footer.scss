@@ -1,0 +1,21 @@
+@use "global";
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+
+  .social-links {
+    a {
+      font-size: 1.5rem;
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: scale-color($color: global.$light-color, $blackness: 30%);
+      }
+    }
+  }
+}

@@ -25,7 +25,7 @@ const testimonialsSlider = tns({
 });
 
 const hamburgerMenu = document.querySelector(".hamburger-menu");
-const navbarLinks = document.querySelector(".navbar-links");
+const navbarLinks = document.querySelector("nav .links");
 
 hamburgerMenu.addEventListener("click", () => {
   hamburgerMenu.classList.toggle("open");

@@ -1,0 +1,24 @@
+@use "global";
+
+nav {
+  padding: 15px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-left: 15px;
+    }
+
+    a:hover {
+      color: scale-color($color: global.$light-color, $blackness: 30%);
+    }
+  }
+}

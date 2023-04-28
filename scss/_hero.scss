@@ -1,0 +1,21 @@
+@use "global";
+
+.hero {
+  padding: 20px 0;
+
+  h1 {
+    span {
+      color: global.$yellow-color;
+    }
+  }
+
+  .left {
+    p {
+      margin: 20px 0;
+    }
+
+    button {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@use "global";
+
+@media (max-width: 768px) {
+  .divide-left-and-right {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    .links {
+      background-color: global.$dark-color;
+      position: fixed;
+      top: 56px; /* hardcoded navbar height */
+      bottom: 0;
+      right: 0;
+      flex-direction: column;
+      min-width: 70%;
+      border-left: global.$light-color 1px solid;
+      transform: translateX(100%);
+      transition: 0.5s;
+
+      &.open {
+        transform: translateX(0);
+      }
+
+      li {
+        margin: 0;
+        padding: 7px;
+      }
+
+      button {
+        font-size: 1rem;
+      }
+    }
+
+    .hamburger-menu {
+      display: block;
+    }
+  }
+
+  .hero {
+    margin-top: 56px; /* hardcoded navbar height */
+
+    .left {
+      order: 2;
+    }
+  }
+
+  .benefits {
+    .card-container {
+      flex-direction: column;
+    }
+  }
+}

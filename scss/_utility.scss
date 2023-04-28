@@ -1,0 +1,49 @@
+@use "global";
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+%btn {
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 0.5em 1em;
+  border: none;
+  transition: 0.2s;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: global.$primary-color;
+  color: global.$light-color;
+
+  &:hover {
+    background-color: scale-color(
+      $color: global.$primary-color,
+      $blackness: 20%
+    );
+  }
+}
+
+.bg-primary {
+  background-color: global.$primary-color;
+  color: global.$light-color;
+}
+
+.bg-dark {
+  background-color: global.$dark-color;
+  color: global.$light-color;
+}
+
+.divide-left-and-right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  > * {
+    flex-basis: 50%;
+  }
+}

@@ -16,6 +16,7 @@
     "tiny-slider": "^2.9.4"
   },
   "devDependencies": {
+    "sass": "^1.62.1",
     "vite": "^4.3.3"
   }
 }
